@@ -1,2 +1,2 @@
-# dhivjosephdotdev
-First iteration of my personal website
+# dhivjoseph.dev
+First iteration of my personal website built with flask.
