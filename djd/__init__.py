@@ -14,6 +14,7 @@ def create_app(test_config=None):
         # load the instance config, if it exists, when not testing
         app.config.from_pyfile('config.py', silent=True)
     else:
+        # if it's in testing then it'll grab the test config
         app.config.from_mapping(test_config)
     try:
         os.makedirs(app.instance_path)
@@ -23,14 +24,14 @@ def create_app(test_config=None):
     from . import db
     db.init_app(app)
 
-    from . import auth
-    app.register_blueprint(auth.bp)
-
     return app
+
     
+    # index view
     @app.route('/')
     def index():
         return 'Hello, welcome to dhivjoseph.dev 👋'
+
 
     return app
 
