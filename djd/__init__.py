@@ -1,6 +1,7 @@
 import os
 
-from flask import Flask
+from flask import Flask, render_template, url_for
+
 
 def create_app(test_config=None):
     # create and configure the app
@@ -20,18 +21,25 @@ def create_app(test_config=None):
         os.makedirs(app.instance_path)
     except OSError:
         pass
-
+ 
+    """
+    # db init
     from . import db
     db.init_app(app)
 
-    return app
+    return app    
+    """
 
-    
+
     # index view
     @app.route('/')
     def index():
-        return 'Hello, welcome to dhivjoseph.dev 👋'
+        return render_template('index.html')
+    
 
-
+    # blog read view
+    @app.route('/blog')
+    def blog():
+        return 'This is my blog. These thoughts are my own.'
+    
     return app
-
