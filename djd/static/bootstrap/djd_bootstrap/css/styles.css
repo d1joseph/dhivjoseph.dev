@@ -68,11 +68,13 @@ body {
   text-align: left;
   background-color: var(--bg-color);
 }
+.landing {
+  background-image: url('../assets/img/double-bubble-dark.png');
+}
 
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
-
 .neu-btn:focus {
   outline:none !important;
 }
@@ -3897,6 +3899,10 @@ input[type=button].btn-block {
 .custom-select {
     transition: none;
   }
+}
+
+nav {
+  font-size: 1.5rem !important;
 }
 
 .nav {
@@ -10098,16 +10104,25 @@ h3 {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #212529;
+  color: #fff;
+  overflow: hidden;
+  background: linear-gradient(to right, #53f5a1, #53f5a1 50%, #fff 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+  text-decoration: none;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #fff;
+  background-position: 0 100%;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #212529;
+  color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #212529;
+  color: #fff;
   opacity: 0.8;
   transition: ease-in;
 }
@@ -10131,11 +10146,9 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #212529;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #212529;
   }
 
   #mainNav.navbar-shrink {
@@ -10151,11 +10164,12 @@ h3 {
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
+  color: #fff;
+  margin-top: 40%;
   font-family: 'Ubuntu';
   font-size: 2.75rem;
   line-height: 2.75rem;
 }
-
 .masthead .masthead-avatar {
   width: 15rem;
 }
@@ -10173,9 +10187,11 @@ h3 {
     font-size: 1.5rem;
   }
 }
-.lead {
+.landing-text.lead {
+  color: #fff;
   padding-top: 0.6rem;
   max-width: 45rem;
+  font-size: 1.8rem;
 }
 .portfolio .portfolio-item {
   cursor: pointer;
