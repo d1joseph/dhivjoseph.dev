@@ -68,8 +68,15 @@ body {
   text-align: left;
   background-color: var(--bg-color);
 }
+
+h1.h1 {
+  margin-top: 10%;
+  font-size: 7rem;
+  color: #FFFAFA;
+}
+
 .landing {
-  background-image: url('../assets/img/double-bubble-dark.png');
+  background-image: url('../assets/img/papyrus-dark.png');
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10095,10 +10102,10 @@ h3 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: "Ubuntu" ,sans-serif;
-  font-weight: 800;
+  font-weight: 600;
 }
 #mainNav .navbar-brand {
-  color: #212529;
+  color: #08080c;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
@@ -10106,7 +10113,7 @@ h3 {
 #mainNav .navbar-nav li.nav-item a.nav-link {
   color: #fff;
   overflow: hidden;
-  background: linear-gradient(to right, #53f5a1, #53f5a1 50%, #fff 50%);
+  background: linear-gradient(to right, #FFFAFA, #FFFAFA 50%, #1e1e1e 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -10119,12 +10126,10 @@ h3 {
   background-position: 0 100%;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
+
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #fff;
-  opacity: 0.8;
-  transition: ease-in;
+  color: white;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10164,7 +10169,7 @@ h3 {
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
-  color: #fff;
+  color: #FFFAFA;
   margin-top: 40%;
   font-family: 'Ubuntu';
   font-size: 2.75rem;
@@ -10188,7 +10193,8 @@ h3 {
   }
 }
 .landing-text.lead {
-  color: #fff;
+  color: #FFFAFA;
+  font-weight: 200;
   padding-top: 0.6rem;
   max-width: 45rem;
   font-size: 1.8rem;
