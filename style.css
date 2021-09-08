@@ -1,0 +1,15 @@
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#blog, #contact {
+    background-color: rgb(250, 249, 249);
+}
+
+.hero h1 {
+    margin: 30% 0 1.8rem 0;
+}
