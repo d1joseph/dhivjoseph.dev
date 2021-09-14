@@ -13,3 +13,8 @@ section {
 .hero h1 {
     margin: 30% 0 1.8rem 0;
 }
+
+body {
+    opacity: 0;
+    transition: opacity 1.4s;
+}

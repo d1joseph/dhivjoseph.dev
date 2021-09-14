@@ -11,14 +11,15 @@
         <!-- bootstrap cdn. This will be replaced with the source files in the near future.  -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     </head>
-    <body>
+    <body onload="document.body.style.opacity='1'">
         <header>
+          <!-- nav -->
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-brand" href="#">Dhiv Joseph</a>
-              
+                
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
@@ -44,25 +45,35 @@
         <!-- landing -->
         <section id="index">
             <div class="container hero">
-                <h1 class="display-3">Greetings</h1>
+                <h1 class="display-1">Hello</h1>
                 <div class="col-md-7">
-                    <p>Thanks for visiting :)</p>
-                    <p>I'm Dhiv, a computer programmer based in Sydney Australia. I have a deep interest in computer science, web development software engineering.</p>
-                    <p>In my spare time I enjoy reading, history, philosophy, finance & economics, gaming and learning.</p>
+                    <p>I'm Dhiv, a hobbyist programmer based in Sydney Australia.</p>
+                    <p>In my spare time I enjoy reading, ancient history & philosophy, finance & economics, gaming and learning.</p>
+                </div>
+                <div class="btn">
+                  <!-- remember to optimize this for Firefox (Outline on click issue...) -->
+                  <button class="btn btn-outline-success" #>Learn more</button>
                 </div>
             </div>
         </section>
         <!-- blog -->
         <section id="blog">
+          <div class="container">
+            <h1 class="display-5">Blog</h1>
+          </div>
 
         </section>
         <!-- work with me -->
         <section id="work">
-
+          <div class="container">
+            <h1 class="display-5">Some of my work</h1>
+          </div>
         </section>
         <!-- contact -->
         <section id="contact">
-
+          <div class="container">
+            <h1 class="display-5">Contact</h1>
+          </div>
         </section>
         <!-- bootstrap bundles -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
