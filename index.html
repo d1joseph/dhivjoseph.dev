@@ -40,7 +40,7 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </div>
-              </nav>
+            </nav>
         </header>
         <!-- landing -->
         <section id="index">
@@ -48,13 +48,17 @@
                 <h1 class="display-1">Hello</h1>
                 <div class="col-md-7">
                     <p>I'm Dhiv, a hobbyist programmer based in Sydney Australia.</p>
-                    <p>Outside of working with technology, I enjoy reading, ancient history & philosophy, studying of economics, insurance and self-learning.</p>
+                    <p>Outside of technology, I enjoy reading, ancient history & philosophy, studying of economics, insurance and self-learning.</p>
+                    <p>
+                      I also run an online gaming community (guild) called <a href="https://spaceforceapes.gg/">Space Force Apes</a> with a bunch of cool people.
+                    </p>
                 </div>
                 <div class="btn">
                   <!-- remember to optimize this for Firefox (Outline on click issue...) -->
                   <button class="btn btn-outline-success">About me</button>
                 </div>
             </div>
+            <!-- about me -->
         </section>
         <!-- blog -->
         <section id="blog">
@@ -132,12 +136,67 @@
         <section id="work">
           <div class="container">
             <h1 class="display-5">Some of my work</h1>
+            <!-- 3.js model -->
+            <div></div>
           </div>
         </section>
         <!-- contact -->
         <section id="contact">
           <div class="container">
             <h1 class="display-5">Contact</h1>
+
+            <!-- contact form - grid column -->
+            <div class="col-md-9 mb-md-0 mb-5">
+              <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                
+                <!-- grid row -->
+                <div class="row">
+                  <!-- grid col -->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="name" name="name" class="form-control">
+                      <label for="name" class="">Your name</label>
+                    </div>
+                  </div>
+
+                  <!-- grid col -->
+                  <div class="col-md-6">
+                    <div class="md-form mb-0">
+                      <input type="text" id="name" name="name" class="form-control">
+                      <label for="name" class="">Your email</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- grid row -->
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="md-form mb-0">
+                      <input type="text" id="subject" name="subject" class="form-control">
+                      <label for="subject" class="">Subject</label>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- grid row -->
+                <div class="row">
+                  <!-- grid col -->
+                  <div class="col-md-12">
+                    <div class="md-form">
+                      <textarea type="text" name="message" id="message" rows="2" class="form-control md-textarea"></textarea>
+                      <label for="message">Your message</label>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+
+              <!-- submit btn -->
+              <div class="text-center text-md-left">
+                <a href="" class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+              </div>
+              <div class="status"></div>
+            </div>
           </div>
         </section>
         <!-- bootstrap bundles -->
