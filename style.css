@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     src: url();
     font-weight: 400;
     font-style: normal;
@@ -11,22 +11,44 @@ html {
 }
 
 section {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.social li .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.social li .fa:hover {
+    opacity: 0.7;
+}
+
+#index {
+    min-height: 100vh;
+}
+
+.greeting {
+    font-size: 60px;
+}
+
+.hero {
+    font-size: 16px;
+    position: relative;
+    top: 150px;
+}
+
 #blog, #contact {
-    background-color: rgb(250, 249, 249);
+    margin-top: 200px;
 }
 
-.hero h1 {
-    margin: 30% 0 1.8rem 0;
-}
-
-.blog h1 {
-    margin-top: 50%;
+.form {
+    position: relative;
+    top: 30%;
 }
 
 body {

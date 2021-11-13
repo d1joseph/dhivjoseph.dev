@@ -4,10 +4,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--  -->
-        <title>Dhiv Joseph - </title>
+        <!-- tagline -->
+        <title>Dhiv Joseph - web3 developer specialising in writing Python, JavaScript, HTML5, CSS3 and Solidity.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <!-- custom css -->
         <link rel="stylesheet" href="style.css" media="all">
         <!-- bootstrap cdn. This will be replaced with the source files in prod.  -->
@@ -23,113 +25,151 @@
                 <a class="navbar-brand" href="#">Dhiv Joseph</a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                   <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="#blog">Blog<span class="sr-only">(current)</span></a>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Portfolio</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    <!-- social media -->
+                    <ul class="social" style="display: inline-flex; list-style: none; margin-right: 10px;">
+                      <li><a href="#" class="fa fa-github"></a></li>
+                      <li><a href="#" class="fa fa-twitter"></a></li>
+                      <li><a href="#" class="fa fa-twitch"></a></li>
+                      <li><a href="#" class="fa fa-linkedin"></a></li>
+                    </ul>
+                    <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
                   </form>
                 </div>
             </nav>
         </header>
         <!-- landing -->
         <section id="index">
+          <!-- main -->
             <div class="container hero">
-                <h1 class="display-1">Hello</h1>
-                <div class="col-md-7">
-                    <p>I'm Dhiv, a hobbyist programmer based in Sydney Australia.</p>
-                    <p>Outside of technology, I enjoy reading, ancient history & philosophy, studying of economics, insurance and self-learning.</p>
-                    <p>
-                      I also run an online gaming community (guild) called <a href="https://spaceforceapes.gg/" target="_">Space Force Apes</a> with a bunch of cool people.
-                    </p>
-
+              <!-- hero -->
+              <div class="row">
+                <div class="col-md-8 mx-3 masthead">
+                  <h1 class="greeting display-5">Hello 👋</h1><br>
+                  <p>I'm Dhiv, an insurance professional turned developer/programmer...<i>I know, talk about pivots, right.</i></p>
+                  <p>
+                    My passion for code and the internet started at age 14, creeping in the mmorpg forums in an effort to learn and write <a href="https://www.lua.org/">LUA</a> for custom add-ons and scripts that helped my playstyle in World of Warcraft 2v2 and 3v3 Arena. 
+                  </p>
+                  <p>Over time I would go on to write other projects in <strong>Python, HTML5/CSS3, JS ES6</strong> and recently,<strong> Solidity</strong>.
+                  <p>Nowadays, I design, build and launch <a href="">high performance computing (HPC)</a> applications, websites and APIs that delight users of across a variety of<a href="#portfolio"> industries </a>as well as innovative use cases in online gaming communities.</p><!-- link portfolio section here -->
+                  <!-- freelance -->
+                  <div class="mt-5 freelance">
+                    <div class="lead pitch">
+                      <h3>Need help with a project?</h3>
+                      <p>I provide web development, design and digital product services at a competitive rate. <a href="">Learn more</a></p>
+                    </div><br>
+                    <div class="lead discord">
+                      <h3>Start a discussion?</h3>
+                      <!-- Discord scheduler API -->
+                      <p>Join me on a<a href="#"> Discord </a> to talk.</p>
+                      <p><i>alternatively</i></p>
+                      <p> <strong>Email me </strong><a href="">dhiv.joseph@gmail.com</a></p>
+                    </div>
+                  </div>
                 </div>
-                <div class="btn">
-                  <!-- remember to optimize this for Firefox (Outline on click issue...) -->
-                  <button class="btn btn-outline-success">About me</button>
-                </div>
+              </div>
             </div>
         </section>
+
         <!-- blog -->
         <section id="blog">
+          <!-- blog posts -->
           <div class="container blog">
-            <h1 class="display-5">Blog</h1>
-            <h3 class="h3">A collection of ramblings.</h3>
-            <div class="row">
-              <div class="scrollable">
-                <!-- posts -->
-                <table class="table blogs">
-                  <!-- To do: header on scroll -->
-                  <thead>
-                    <tr>
-                      <th scope="col">Post title</th>
-                      <th scope="col">Date published</th>
-                      <th scope="col">Reading time</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
+            <div class="col-md-6 mt-3 blog">
+              <h3 class="display-5">Blog</h3>
+              <h5 class="h5">I write about a variety of topics, feel free to share if you enjoy these posts.</h5><br>
+              <p class="topics"><strong>Topics:</strong><i> software craftsmanship, gaming, web3, decentralization, economics, capitalism, trading, cryptocurrency</i></p>
+              
+              <div class="row">
+                <div class="scrollable">
+                  <!-- posts -->
+                  <table class="table blogs">
 
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
+                    <thead>
+                      <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Published</th>
+                        <th scope="col">Read Time</th>
+                      </tr>
+                    </thead>
                     
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
-
-                    <tr>
-                      <th scope="row">The basics of blockchain technology</th>
-                      <td>Posted 6 September 2021</td>
-                      <td>6 min read</td>
-                    </tr>
-                  </tbody>                    
-                </table>
+                    <tbody>
+                      <tr>
+                        <th scope="row">The basics of blockchain technology</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>6 min read</td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row">What I've learnt being the GM of a World Of Warcraft</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>11 min read</td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row">Web3 from a gamer's point of view</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>9 min read</td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row">Why I'm using 'functional programming' for my applications in Solidity</th>
+                        <td>Posted  September 2021</td>
+                        <td>8 min read</td>
+                      </tr>
+                      
+                      <tr>
+                        <th scope="row">What's raiding like in Final Fantasy XIV: Endwalker?</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>14 min read</td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row">What are those .eth names floating around? Learn about Ethereum Name Service (ENS)</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>8 min read</td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row">Running the Space Force Apes stack using integrations across Discord, Notion and Django.</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>10 min read</td>
+                      </tr>
+    
+                      <tr>
+                        <th scope="row">Smart contract development is dope, here's why</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>6 min read</td>
+                      </tr>
+  
+                      <tr>
+                        <th scope="row">CrossedUp, a neural network and computer vision engine for the NBA</th>
+                        <td>Posted 6 September 2021</td>
+                        <td>6 min read</td>
+                      </tr>
+  
+                    </tbody>                    
+                  </table>
+                </div>
               </div>
             </div>
           </div>
-
         </section>
+
         <!-- contact -->
         <section id="contact">
-          <div class="container">
+          <div class="container form">
             <h1 class="display-5">Contact</h1>
 
             <!-- contact form - grid column -->
@@ -186,23 +226,24 @@
             </div>
           </div>
         </section>
+
         <!-- three js -->
         <script src="js/three.js"></script>
         <!-- bootstrap bundles -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <!-- three js scene setting -->
+        <!-- three js scene render -->
         <script>
           const scene = new THREE.Scene();
           const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
+          
           const renderer = new THREE.WebGLRenderer();
           renderer.setSize( window.innerWidth, window.innerHeight );
           document.body.appendChild( renderer.domElement );
 
           // instantiate the cube
           const geometry = new THREE.BoxGeometry();
-          const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
+          const material = new THREE.MeshBasicMaterial( { color: 0x00ffcc } );
           const cube = new THREE.Mesh( geometry, material );
           scene.add( cube );
           
