@@ -16,10 +16,15 @@ section {
     align-items: center;
 }
 
+ul.social {
+    margin: 0;
+    padding: 0;
+}
+
 .social li .fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px;
+    padding: 2px 30px 2px 0px;
+    font-size: 25px;
+    width: 40px;
     text-align: center;
     text-decoration: none;
 }
@@ -37,7 +42,7 @@ section {
 }
 
 .hero {
-    font-size: 16px;
+    font-size: 22px;
     position: relative;
     top: 150px;
 }

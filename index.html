@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- tagline -->
-        <title>Dhiv Joseph - web3 developer specialising in writing Python, JavaScript, HTML5, CSS3 and Solidity.</title>
+        <title>Dhiv Joseph - software developer specialising in writing Python, JavaScript, HTML5, CSS3 and Solidity.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- font awesome icons -->
@@ -35,17 +35,12 @@
                       <a class="nav-link" href="#contact">Contact</a>
                     </li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <!-- social media -->
-                    <ul class="social" style="display: inline-flex; list-style: none; margin-right: 10px;">
-                      <li><a href="#" class="fa fa-github"></a></li>
-                      <li><a href="#" class="fa fa-twitter"></a></li>
-                      <li><a href="#" class="fa fa-twitch"></a></li>
-                      <li><a href="#" class="fa fa-linkedin"></a></li>
-                    </ul>
-                    <input class="form-control mr-sm-1" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
-                  </form>
+                  <!-- social media -->
+                  <ul class="social" style="display: inline-flex; list-style: none; margin-right: 10px;">
+                    <li><a href="#" class="fa fa-github"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                  </ul>
                 </div>
             </nav>
         </header>
@@ -56,18 +51,18 @@
               <!-- hero -->
               <div class="row">
                 <div class="col-md-8 mx-3 masthead">
-                  <h1 class="greeting display-5">Hello 👋</h1><br>
-                  <p>I'm Dhiv, an insurance professional turned developer/programmer...<i>I know, talk about pivots, right.</i></p>
-                  <p>
+                  <h1 class="greeting display-5">Hello</h1><br>
+                  <p>I used to write insurance policies...now I write software.</p>
                     My passion for code and the internet started at age 14, creeping in the mmorpg forums in an effort to learn and write <a href="https://www.lua.org/">LUA</a> for custom add-ons and scripts that helped my playstyle in World of Warcraft 2v2 and 3v3 Arena. 
                   </p>
-                  <p>Over time I would go on to write other projects in <strong>Python, HTML5/CSS3, JS ES6</strong> and recently,<strong> Solidity</strong>.
-                  <p>Nowadays, I design, build and launch <a href="">high performance computing (HPC)</a> applications, websites and APIs that delight users of across a variety of<a href="#portfolio"> industries </a>as well as innovative use cases in online gaming communities.</p><!-- link portfolio section here -->
+                  <p>Over time I would go on to build other cool sh*t in <strong>Python, HTML5/CSS3, JS ES6</strong> and recently,<strong> Solidity</strong>.
+                  <p>As a programmer, I'm passionate about blending elegant design, sound engineering and expressive creativity to produce <a href="">highly performant</a> web applications, dynamic & lively websites, Restful APIs, and <a href="">custom software</a> that delights users.</p><!-- link portfolio section here -->
                   <!-- freelance -->
                   <div class="mt-5 freelance">
                     <div class="lead pitch">
-                      <h3>Need help with a project?</h3>
-                      <p>I provide web development, design and digital product services at a competitive rate. <a href="">Learn more</a></p>
+                      <h1 class="display-5">Need a developer?</h1>
+                      <p>I provide freelance software development and web design services.</p>
+                      <a href=""><h3 class="display-5">Learn more</h3></a>
                     </div><br>
                     <div class="lead discord">
                       <h3>Start a discussion?</h3>
@@ -232,36 +227,5 @@
         <!-- bootstrap bundles -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <!-- three js scene render -->
-        <script>
-          const scene = new THREE.Scene();
-          const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-          
-          const renderer = new THREE.WebGLRenderer();
-          renderer.setSize( window.innerWidth, window.innerHeight );
-          document.body.appendChild( renderer.domElement );
-
-          // instantiate the cube
-          const geometry = new THREE.BoxGeometry();
-          const material = new THREE.MeshBasicMaterial( { color: 0x00ffcc } );
-          const cube = new THREE.Mesh( geometry, material );
-          scene.add( cube );
-          
-          // set camera position
-          camera.position.z = 5;
-          
-          // render scene
-          function animate() {
-            requestAnimationFrame( animate );
-
-            // animate cube
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-            
-            renderer.render( scene, camera );
-          }
-          animate();
-          
-        </script>
     </body>
 </html>
